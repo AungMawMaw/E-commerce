@@ -1,0 +1,24 @@
+<div class="flex flex-row justify-between text-primary">
+  <h2>Exclusive</h2>
+  <div class="flex gap-4">
+    @for (navLink of links; track navLink.label) {
+      <a
+        [routerLink]="navLink.path"
+        routerLinkActive="underline "
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        {{ navLink.label }}
+      </a>
+    }
+  </div>
+  <div class="flex gap-2">
+    <section class="flex bg-primary-bg-gray">
+      <input
+        type="text"
+        class="flex-grow w-full"
+        placeholder="What are you looking for?"
+      />
+      <span class="material-symbols-outlined"> search </span>
+    </section>
+  </div>
+</div>
