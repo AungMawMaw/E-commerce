@@ -1,1 +1,12 @@
-<p>browse-by-category works!</p>
+<app-category-header headerTitle="Categories" title="Browse By Category">
+  <app-next-and-previous ngProjectAs="right" />
+
+  <div ngProjectAs="body" class="flex gap-4">
+    @for (link of links; track link.label) {
+      <app-browse-by-category-item
+        [categoryLink]="link"
+        class="flex-1 basis-1/5"
+      />
+    }
+  </div>
+</app-category-header>

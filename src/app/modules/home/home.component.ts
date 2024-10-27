@@ -6,6 +6,7 @@ import { ContainerComponent } from '../../shared/components/container/container.
 import { EMPTY, finalize, Observable } from 'rxjs';
 import { ProductService } from './services/product.service';
 import { Product } from './models/products.model';
+import { BrowseByCategoryComponent } from './components/browse-by-category/browse-by-category.component';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +16,7 @@ import { Product } from './models/products.model';
     SiderComponent,
     TodayFlashSaleComponent,
     ContainerComponent,
+    BrowseByCategoryComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
