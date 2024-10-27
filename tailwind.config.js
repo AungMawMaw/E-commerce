@@ -24,6 +24,11 @@ module.exports = {
         "header-lg": ["24px", "24px"], // font-size 24px, line-height 24px
         "banner-lg": ["48px", "60px"], // font-size 24px, line-height 24px
         clock: ["32px", "30px"], // font-size 24px, line-height 24px
+        "clock-xsm": ["11px", "18px"], // font-size 24px, line-height 24px
+        // clock: {
+        //   DEFAULT: ["32px", "30px"], // font-size 24px, line-height 24px
+        //   xsm: ["11px", "18px"],
+        // },
       },
       fontWeight: {
         header: "700",

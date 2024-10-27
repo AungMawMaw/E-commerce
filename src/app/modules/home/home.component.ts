@@ -10,6 +10,7 @@ import { BrowseByCategoryComponent } from './components/browse-by-category/brows
 import { BestSellingProductsComponent } from './components/best-selling-products/best-selling-products.component';
 import { ExploreOurProductsComponent } from './components/explore-our-products/explore-our-products.component';
 import { NewArrivalComponent } from './components/new-arrival/new-arrival.component';
+import { CountdownSpecialItemComponent } from './components/countdown-special-item/countdown-special-item.component';
 
 @Component({
   selector: 'app-home',
@@ -23,6 +24,7 @@ import { NewArrivalComponent } from './components/new-arrival/new-arrival.compon
     BestSellingProductsComponent,
     ExploreOurProductsComponent,
     NewArrivalComponent,
+    CountdownSpecialItemComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

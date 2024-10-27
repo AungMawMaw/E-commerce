@@ -1,0 +1,39 @@
+<div class="text-sm text-primary font-poppins">
+  <div class="flex gap-2">
+    <div
+      class="flex flex-col items-center justify-center rounded-full bg-secondary w-16 h-16"
+    >
+      <h2 class="text-sm">
+        {{ days | number: "2.0-0" }}
+      </h2>
+      <p class="text-clock-xsm">Days</p>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center rounded-full bg-secondary w-16 h-16"
+    >
+      <h2 class="text-sm">
+        {{ hours | number: "2.0-0" }}
+      </h2>
+      <p class="text-clock-xsm">Hours</p>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center rounded-full bg-secondary w-16 h-16"
+    >
+      <h2 class="text-sm">
+        {{ minutes | number: "2.0-0" }}
+      </h2>
+      <p class="text-clock-xsm">Minutes</p>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center rounded-full bg-secondary w-16 h-16"
+    >
+      <h2 class="text-sm">
+        {{ seconds | number: "2.0-0" }}
+      </h2>
+      <p class="text-clock-xsm">Seconds</p>
+    </div>
+  </div>
+</div>
