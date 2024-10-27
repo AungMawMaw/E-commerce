@@ -1,6 +1,9 @@
-<div class="flex flex-row justify-between text-primary">
-  <h2>Exclusive</h2>
-  <div class="flex gap-4">
+<app-header-discount />
+<div
+  class="flex flex-row justify-between text-primary sm:px-primary-x pt-9 pb-2 font-poppins border-b gap-10"
+>
+  <h2 class="font-bold text-2xl">Exclusive</h2>
+  <div class="hidden sm:flex gap-8">
     @for (navLink of links; track navLink.label) {
       <a
         [routerLink]="navLink.path"
@@ -11,14 +14,16 @@
       </a>
     }
   </div>
-  <div class="flex gap-2">
-    <section class="flex bg-primary-bg-gray">
+  <div class="hidden sm:flex flex-grow-0 gap-4">
+    <section class="flex bg-primary-bg-gray max-w-max">
       <input
         type="text"
-        class="flex-grow w-full"
+        class="flex-grow w-full bg-primary-bg-gray"
         placeholder="What are you looking for?"
       />
-      <span class="material-symbols-outlined"> search </span>
+      <img src="assets/icons/search.svg" alt="search Icon" />
     </section>
+    <img src="assets/icons/heart.svg" alt="heart Icon" />
+    <img src="assets/icons/shoppingCart.svg" alt="shoppingCart Icon" />
   </div>
 </div>

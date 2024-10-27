@@ -11,27 +11,31 @@ module.exports = {
         100: "100",
         200: "200",
         300: "300",
-        400: "400",
+        400: "400", // Default normal weight
         500: "500",
         600: "600",
-        700: "700",
+        700: "700", // Bold weight
         800: "800",
         900: "900",
-        regular: "400",
-        bold: "700",
+        regular: "400", // Normal weight
+        bold: "700", // Bold weight
       },
       fontSize: {
         nav: ["16px", "24px"], // font-size 16px, line-height 24px
         "header-lg": ["24px", "24px"], // font-size 24px, line-height 24px
+        "banner-lg": ["48px", "60px"], // font-size 24px, line-height 24px
       },
       fontWeight: {
         header: "700",
       },
       padding: {
-        header: "1rem 2rem", // Adjust as needed
+        header: "1rem 2rem",
+        "primary-x": "135px",
+        "banner-l": "68px",
       },
       margin: {
         header: "1.5rem 0", // Adjust as needed
+        "primary-x": "135px",
       },
       colors: {
         primary: "#000000", // Primary color
