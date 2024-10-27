@@ -1,1 +1,66 @@
-<p>footer works!</p>
+<div
+  class="flex flex-col justify-between bg-primary text-secondary gap-4 p-4 lg:p-10 md:flex-row"
+>
+  <app-footer-list title="Exclusive">
+    <div class="flex flex-col">
+      <h2 class="text-lg">Subscribe</h2>
+      <p class="text-sm">Get 10% off your first order</p>
+
+      <section class="flex gap-2 border-secondary border rounded max-w-max">
+        <input
+          type="email"
+          class="bg-primary py-2 px-1 w-40"
+          placeholder="Enter your email"
+        />
+        <img src="assets/icons/send.svg" alt="send Icon" />
+      </section>
+    </div>
+  </app-footer-list>
+
+  <app-footer-list title="Support">
+    <div class="flex flex-col text-sm sm:text-normal">
+      <p class="">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+      <p class="">exclusive&#64;gmail.com</p>
+      <p class="">+88015-88888-9999</p>
+    </div>
+  </app-footer-list>
+
+  <app-footer-list title="Account">
+    <div class="flex flex-col text-sm sm:text-normal">
+      <!-- <p class="">i</p> -->
+      <p class="">My Account</p>
+      <p class="">Login / Register</p>
+      <p class="">Cart</p>
+      <p class="">Whishlist</p>
+      <p class="">Shop</p>
+    </div>
+  </app-footer-list>
+
+  <app-footer-list title="Quick Link">
+    <div class="flex flex-col text-sm sm:text-normal">
+      <p class="">Privacy Policy</p>
+      <p class="">Terms Of Use</p>
+      <p class="">FAQ</p>
+      <p class="">Contact</p>
+    </div>
+  </app-footer-list>
+
+  <app-footer-list title="Download App">
+    <div class="flex flex-col gap-4 text-sm sm:text-normal">
+      <p class="">Save $3 with App New User Only</p>
+      <div class="flex gap-4">
+        <img src="assets/images/footer/qr.svg" alt="qr image" />
+        <div class="flex flex-col gap-4 justify-between">
+          <img src="assets/images/footer/playStore.svg" alt="playStore image" />
+          <img src="assets/images/footer/appStore.svg" alt="appStore image" />
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <img src="assets/icons/facebook.svg" alt="facebook icon" />
+        <img src="assets/icons/twitter.svg" alt="twitter icon" />
+        <img src="assets/icons/instagram.svg" alt="instagram icon" />
+        <img src="assets/icons/linkedIn.svg" alt="linkedIn icon" />
+      </div>
+    </div>
+  </app-footer-list>
+</div>

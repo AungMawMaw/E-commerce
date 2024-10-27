@@ -11,6 +11,8 @@ import { BestSellingProductsComponent } from './components/best-selling-products
 import { ExploreOurProductsComponent } from './components/explore-our-products/explore-our-products.component';
 import { NewArrivalComponent } from './components/new-arrival/new-arrival.component';
 import { CountdownSpecialItemComponent } from './components/countdown-special-item/countdown-special-item.component';
+import { CustomerServiceComponent } from './components/customer-service/customer-service.component';
+import { RoundedfullComponent } from '../../shared/components/roundedfull/roundedfull.component';
 
 @Component({
   selector: 'app-home',
@@ -25,6 +27,8 @@ import { CountdownSpecialItemComponent } from './components/countdown-special-it
     ExploreOurProductsComponent,
     NewArrivalComponent,
     CountdownSpecialItemComponent,
+    CustomerServiceComponent,
+    RoundedfullComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
