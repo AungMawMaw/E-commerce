@@ -1,0 +1,42 @@
+<app-category-header headerTitle="Featured" title="New Arrival" class="">
+  <div
+    ngProjectAs="body"
+    class="grid grid-rows-2 grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4 lg:gap-6"
+  >
+    <div class="col-span-2 row-span-2 relative">
+      <app-new-arrival-item
+        [image]="item1?.image"
+        [title]="item1?.title"
+        [text]="item1?.text"
+        [product]="item1?.product"
+      />
+    </div>
+
+    <div class="col-span-2 relative">
+      <app-new-arrival-item
+        [image]="item2?.image"
+        [title]="item2?.title"
+        [text]="item2?.text"
+        [product]="item2?.product"
+      />
+    </div>
+
+    <div class="relative">
+      <app-new-arrival-item
+        [image]="item3?.image"
+        [title]="item3?.title"
+        [text]="item3?.text"
+        [product]="item3?.product"
+      />
+    </div>
+
+    <div class="relative">
+      <app-new-arrival-item
+        [image]="item4?.image"
+        [title]="item4?.title"
+        [text]="item4?.text"
+        [product]="item4?.product"
+      />
+    </div>
+  </div>
+</app-category-header>

@@ -166,14 +166,110 @@
       ]
     }
   ],
-  "comments": [
+  "newArrivals": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "image": "playStation5.svg",
+      "title": "PlayStation 5",
+      "text": "Black and White version of the PS5 coming out on sale.",
+      "product": [
+        {
+          "id": "1",
+          "name": "PlayStation 5 Console",
+          "image": "https://example.com/ps5.jpg",
+          "price": 499.99,
+          "categories": ["Electronics", "Gaming"],
+          "rating": 4.9,
+          "isFavourite": true,
+          "itemsSold": 500,
+          "stock": 10,
+          "discount": 5,
+          "new": true,
+          "colors": [{ "colorName": "White", "colorCode": "#FFFFFF" }]
+        }
+      ]
+    },
+    {
+      "image": "womenCollection.svg",
+      "title": "Women’s Collections",
+      "text": "Featured woman collections that give you another vibe.",
+      "product": [
+        {
+          "id": "2",
+          "name": "Summer Dress",
+          "image": "https://example.com/summer-dress.jpg",
+          "price": 59.99,
+          "categories": ["Fashion", "Women's Clothing"],
+          "rating": 4.7,
+          "isFavourite": false,
+          "itemsSold": 200,
+          "stock": 25,
+          "new": true,
+          "colors": [
+            { "colorName": "Red", "colorCode": "#FF0000" },
+            { "colorName": "Blue", "colorCode": "#0000FF" }
+          ]
+        },
+        {
+          "id": "3",
+          "name": "Leather Handbag",
+          "image": "https://example.com/leather-handbag.jpg",
+          "price": 129.99,
+          "categories": ["Fashion", "Accessories"],
+          "rating": 4.8,
+          "isFavourite": true,
+          "itemsSold": 150,
+          "stock": 20,
+          "new": true,
+          "colors": [
+            { "colorName": "Black", "colorCode": "#000000" },
+            { "colorName": "Brown", "colorCode": "#8B4513" }
+          ]
+        }
+      ]
+    },
+    {
+      "image": "speaker.svg",
+      "title": "Speaker",
+      "text": "Amazon wireless speakers",
+      "product": [
+        {
+          "id": "4",
+          "name": "Bluetooth Speaker",
+          "image": "https://example.com/bluetooth-speaker.jpg",
+          "price": 89.99,
+          "categories": ["Electronics", "Audio"],
+          "rating": 4.6,
+          "isFavourite": true,
+          "itemsSold": 320,
+          "stock": 40,
+          "discount": 15,
+          "new": true,
+          "colors": [
+            { "colorName": "Gray", "colorCode": "#808080" },
+            { "colorName": "Black", "colorCode": "#000000" }
+          ]
+        }
+      ]
+    },
+    {
+      "image": "perfume.svg",
+      "title": "Perfume",
+      "text": "GUCCI INTENSE OUD EDP",
+      "product": [
+        {
+          "id": "5",
+          "name": "Eau de Parfum",
+          "image": "https://example.com/perfume.jpg",
+          "price": 99.99,
+          "categories": ["Beauty", "Fragrance"],
+          "rating": 4.5,
+          "isFavourite": false,
+          "itemsSold": 220,
+          "stock": 30,
+          "new": true,
+          "colors": [{ "colorName": "Clear", "colorCode": "#FFFFFF" }]
+        }
+      ]
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
