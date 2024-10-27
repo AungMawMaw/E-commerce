@@ -1,4 +1,10 @@
-<app-category-header />
-@for (product of products$ | async; track product.id) {
-  <app-today-flash-sale-item [product]="product" />
-}
+<app-category-header headerTitle="Today’s" title="Flash Sales" class="">
+  <app-discount-time-left ngProjectAs="mid"></app-discount-time-left>
+  <app-next-and-previous ngProjectAs="right" />
+
+  <div ngProjectAs="body" class="flex gap-4 overflow-x-auto">
+    @for (product of products$ | async; track product.id) {
+      <app-today-flash-sale-item [product]="product" />
+    }
+  </div>
+</app-category-header>

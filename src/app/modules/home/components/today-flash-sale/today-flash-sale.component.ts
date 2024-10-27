@@ -6,11 +6,19 @@ import { ProductService } from '../../services/product.service';
 import { AsyncPipe } from '@angular/common';
 import { TodayFlashSaleItemComponent } from '../today-flash-sale-item/today-flash-sale-item.component';
 import { CategoryHeaderComponent } from '../category-header/category-header.component';
+import { DiscountTimeLeftComponent } from '../discount-time-left/discount-time-left.component';
+import { NextAndPreviousComponent } from '../next-and-previous/next-and-previous.component';
 
 @Component({
   selector: 'app-today-flash-sale',
   standalone: true,
-  imports: [TodayFlashSaleItemComponent, AsyncPipe, CategoryHeaderComponent],
+  imports: [
+    TodayFlashSaleItemComponent,
+    AsyncPipe,
+    CategoryHeaderComponent,
+    DiscountTimeLeftComponent,
+    NextAndPreviousComponent,
+  ],
   templateUrl: './today-flash-sale.component.html',
   styleUrl: './today-flash-sale.component.css',
 })

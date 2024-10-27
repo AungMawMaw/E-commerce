@@ -1,6 +1,5 @@
-<app-product-card [image]="product().image" [discount]="product().discount" />
-
 <div>
+  <app-product-card [image]="product().image" [discount]="product().discount" />
   <p class="">{{ product().name }}</p>
   @if (product().discount) {
     <p class="text-primary-red">

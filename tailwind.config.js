@@ -23,6 +23,7 @@ module.exports = {
         nav: ["16px", "24px"], // font-size 16px, line-height 24px
         "header-lg": ["24px", "24px"], // font-size 24px, line-height 24px
         "banner-lg": ["48px", "60px"], // font-size 24px, line-height 24px
+        clock: ["32px", "30px"], // font-size 24px, line-height 24px
       },
       fontWeight: {
         header: "700",

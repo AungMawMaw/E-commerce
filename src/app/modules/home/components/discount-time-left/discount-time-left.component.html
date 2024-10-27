@@ -1,0 +1,38 @@
+<div class="flex gap-2">
+  <div class="flex flex-col">
+    Days
+    <h2 class="font-700 text-clock">
+      {{ days | number: "2.0-0" }}
+    </h2>
+  </div>
+
+  <!---->
+  <app-semicol />
+
+  <!---->
+  <div class="flex flex-col">
+    Hours
+    <h2 class="font-700 text-clock">
+      {{ hours | number: "2.0-0" }}
+    </h2>
+  </div>
+  <!---->
+  <app-semicol />
+
+  <div class="flex flex-col">
+    Minutes
+    <h2 class="font-700 text-clock">
+      {{ minutes | number: "2.0-0" }}
+    </h2>
+  </div>
+  <!---->
+  <app-semicol />
+
+  <div class="flex flex-col">
+    Seconds
+    <h2 class="font-700 text-clock">
+      {{ seconds | number: "2.0-0" }}
+    </h2>
+  </div>
+  <!---->
+</div>
