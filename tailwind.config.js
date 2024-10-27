@@ -17,8 +17,6 @@ module.exports = {
         700: "700", // Bold weight
         800: "800",
         900: "900",
-        regular: "400", // Normal weight
-        bold: "700", // Bold weight
       },
       fontSize: {
         nav: ["16px", "24px"], // font-size 16px, line-height 24px
@@ -37,21 +35,23 @@ module.exports = {
         header: "1.5rem 0", // Adjust as needed
         "primary-x": "135px",
       },
+
       colors: {
-        primary: "#000000", // Primary color
-        secondary: "#FFFFFF", // Secondary color
-        "primary-red": "#DB4444", // red
-        "secendary-red": "#ED3833",
-        "primary-green": "#73F467", //green
-        "primary-yellow": "#ECF860",
-        "primary-gray": "C1C0C1",
+        primary: {
+          DEFAULT: "#000000", // Default primary color
+          red: "#DB4444", // Primary red
+          green: "#73F467", // Primary green
+          yellow: "#ECF860", // Primary yellow
+          gray: "#C1C0C1", // Primary gray
+        },
+        secondary: {
+          DEFAULT: "#FFFFFF", // Default secondary color
+          red: "#ED3833", // Secondary red
+          gray: "#F5F5F5",
+        },
 
         accent: "#d946ef", // Accent color
         background: "#f1f5f9", // Background color
-
-        "primary-bg": "#FFFFFF", // Secondary background
-        "secondary-bg": "#000000", // Primary background
-        "primary-bg-gray": "#F5F5F5",
       },
     },
   },
