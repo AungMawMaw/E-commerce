@@ -8,6 +8,7 @@ import { ProductService } from './services/product.service';
 import { Product } from './models/products.model';
 import { BrowseByCategoryComponent } from './components/browse-by-category/browse-by-category.component';
 import { BestSellingProductsComponent } from './components/best-selling-products/best-selling-products.component';
+import { ExploreOurProductsComponent } from './components/explore-our-products/explore-our-products.component';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +20,7 @@ import { BestSellingProductsComponent } from './components/best-selling-products
     ContainerComponent,
     BrowseByCategoryComponent,
     BestSellingProductsComponent,
+    ExploreOurProductsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

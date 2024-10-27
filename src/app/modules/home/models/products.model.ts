@@ -9,7 +9,11 @@ export type Category =
   | 'headphone'
   | 'gaming'
   | 'clothing'
-  | 'accessories'; // Add more categories as needed
+  | 'accessories';
+export interface ProductColorOption {
+  colorName: string;
+  colorCode: string;
+}
 export interface Product {
   id: string;
   name: string;
@@ -21,6 +25,8 @@ export interface Product {
   itemsSold: number;
   stock: number;
   discount?: number;
+  new?: boolean;
+  colors?: ProductColorOption[];
 }
 
 export interface CategoryLink {

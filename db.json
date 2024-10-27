@@ -115,6 +115,55 @@
       "itemsSold": 100,
       "stock": 20,
       "discount": 5
+    },
+    {
+      "id": "1",
+      "name": "Product A",
+      "image": "gamepad.svg",
+      "price": 29.99,
+      "categories": ["Electronics", "Accessories"],
+      "rating": 4.5,
+      "isFavourite": true,
+      "itemsSold": 120,
+      "stock": 15,
+      "discount": 10,
+      "new": true,
+      "colors": [
+        { "colorName": "Red", "colorCode": "#FF0000" },
+        { "colorName": "Blue", "colorCode": "#0000FF" }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Product B",
+      "image": "gamepad.svg",
+      "price": 59.99,
+      "categories": ["Home", "Furniture"],
+      "rating": 4.0,
+      "isFavourite": false,
+      "itemsSold": 80,
+      "stock": 30,
+      "colors": [
+        { "colorName": "Green", "colorCode": "#00FF00" },
+        { "colorName": "Yellow", "colorCode": "#FFFF00" }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Product C",
+      "image": "gamepad.svg",
+      "price": 99.99,
+      "categories": ["Garden", "Outdoor"],
+      "rating": 3.8,
+      "isFavourite": true,
+      "itemsSold": 200,
+      "stock": 50,
+      "discount": 20,
+      "new": false,
+      "colors": [
+        { "colorName": "Black", "colorCode": "#000000" },
+        { "colorName": "White", "colorCode": "#FFFFFF" }
+      ]
     }
   ],
   "comments": [

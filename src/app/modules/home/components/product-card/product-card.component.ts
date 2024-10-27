@@ -1,7 +1,6 @@
 import { Component, Input, input, Signal } from '@angular/core';
 import { CardComponent } from '../../../../shared/components/card/card.component';
 import { RoundedfullComponent } from '../../../../shared/components/roundedfull/roundedfull.component';
-import { Product } from '../../models/products.model';
 import { RatingBarComponent } from '../rating-bar/rating-bar.component';
 import { CommonModule, CurrencyPipe, DecimalPipe } from '@angular/common';
 
