@@ -7,6 +7,7 @@ import { EMPTY, finalize, Observable } from 'rxjs';
 import { ProductService } from './services/product.service';
 import { Product } from './models/products.model';
 import { BrowseByCategoryComponent } from './components/browse-by-category/browse-by-category.component';
+import { BestSellingProductsComponent } from './components/best-selling-products/best-selling-products.component';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ import { BrowseByCategoryComponent } from './components/browse-by-category/brows
     TodayFlashSaleComponent,
     ContainerComponent,
     BrowseByCategoryComponent,
+    BestSellingProductsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

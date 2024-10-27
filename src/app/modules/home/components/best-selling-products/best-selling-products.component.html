@@ -1,0 +1,19 @@
+<app-category-header
+  headerTitle="This Month"
+  title="Best Selling Product"
+  class=""
+>
+  <button
+    type="button"
+    ngProjectAs="right"
+    class="text-xs font-poppins bg-primary-red text-secondary px-8 py-2"
+  >
+    View All
+  </button>
+
+  <div ngProjectAs="body" class="flex gap-4 overflow-x-auto">
+    @for (product of products$ | async; track product.id) {
+      <app-best-selling-products-item [product]="product" />
+    }
+  </div>
+</app-category-header>

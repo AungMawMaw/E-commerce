@@ -1,0 +1,26 @@
+<div>
+  <app-product-card [image]="product().image" [discount]="" />
+  <p class="">{{ product().name }}</p>
+  @if (product().discount) {
+    <p class="text-primary-red">
+      {{
+        discountedPrice(product().price, product().discount!)
+          | currency: "USD" : "symbol" : "1.0-0"
+      }}
+
+      <span class="line-through text-primary-gray">{{
+        product().price | currency: "USD" : "symbol" : "1.0-0"
+      }}</span>
+    </p>
+  } @else {
+    <p>{{ product().price | currency: "USD" : "symbol" : "1.0-0" }}</p>
+  }
+
+  <div class="flex items-center">
+    <app-rating-bar [rating]="product().rating" class="inline-block" />
+
+    <p class="pl-4 text-primary-gray inline-block my-auto text-sm">
+      {{ "(" + product().stock + ")" }}
+    </p>
+  </div>
+</div>
