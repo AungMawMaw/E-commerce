@@ -1,0 +1,130 @@
+{
+  "products": [
+    {
+      "id": "p1",
+      "name": "iPhone 14",
+      "image": "gamepad.svg",
+      "price": 999.99,
+      "categories": ["electronics", "smartphone"],
+      "rating": 3.8,
+      "isFavourite": true,
+      "itemsSold": 250,
+      "stock": 20,
+      "discount": 10
+    },
+    {
+      "id": "p2",
+      "name": "Samsung Galaxy S22",
+      "image": "gamepad.svg",
+      "price": 799.99,
+      "categories": ["electronics", "smartphone"],
+      "rating": 4.5,
+      "isFavourite": false,
+      "itemsSold": 180,
+      "stock": 15,
+      "discount": 5
+    },
+    {
+      "id": "p3",
+      "name": "Sony WH-1000XM4",
+      "image": "gamepad.svg",
+      "price": 349.99,
+      "categories": ["electronics", "accessories"],
+      "rating": 4.7,
+      "isFavourite": true,
+      "itemsSold": 300,
+      "stock": 10
+    },
+    {
+      "id": "p4",
+      "name": "Apple MacBook Air",
+      "image": "gamepad.svg",
+      "price": 1299.99,
+      "categories": ["electronics"],
+      "rating": 4.9,
+      "isFavourite": false,
+      "itemsSold": 120,
+      "stock": 5,
+      "discount": 15
+    },
+    {
+      "id": "p5",
+      "name": "Men's Leather Jacket",
+      "image": "gamepad.svg",
+      "price": 199.99,
+      "categories": ["clothing"],
+      "rating": 4.3,
+      "isFavourite": true,
+      "itemsSold": 75,
+      "stock": 8,
+      "discount": 20
+    },
+    {
+      "id": "p6",
+      "name": "Wireless Mouse",
+      "image": "gamepad.svg",
+      "price": 29.99,
+      "categories": ["electronics", "accessories"],
+      "rating": 4.1,
+      "isFavourite": false,
+      "itemsSold": 450,
+      "stock": 50
+    },
+    {
+      "id": "p7",
+      "name": "Smartwatch Series 7",
+      "image": "gamepad.svg",
+      "price": 399.99,
+      "categories": ["electronics", "accessories"],
+      "rating": 4.6,
+      "isFavourite": true,
+      "itemsSold": 150,
+      "stock": 12
+    },
+    {
+      "id": "p8",
+      "name": "Gaming Console",
+      "image": "gamepad.svg",
+      "price": 499.99,
+      "categories": ["electronics"],
+      "rating": 4.5,
+      "isFavourite": false,
+      "itemsSold": 60,
+      "stock": 7,
+      "discount": 10
+    },
+    {
+      "id": "p9",
+      "name": "Portable Charger",
+      "image": "gamepad.svg",
+      "price": 39.99,
+      "categories": ["electronics", "accessories"],
+      "rating": 4.4,
+      "isFavourite": true,
+      "itemsSold": 500,
+      "stock": 30
+    },
+    {
+      "id": "p10",
+      "name": "Sports Shoes",
+      "image": "gamepad.svg",
+      "price": 89.99,
+      "categories": ["clothing"],
+      "rating": 4.2,
+      "isFavourite": false,
+      "itemsSold": 100,
+      "stock": 20,
+      "discount": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

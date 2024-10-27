@@ -1,1 +1,4 @@
-<app-product-card />
+<app-category-header />
+@for (product of products$ | async; track product.id) {
+  <app-today-flash-sale-item [product]="product" />
+}

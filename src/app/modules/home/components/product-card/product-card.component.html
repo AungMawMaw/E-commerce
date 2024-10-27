@@ -1,10 +1,32 @@
-<app-card>
-  <div class="relative border-black border max-w-max font-poppins font-400">
-    <img src="assets/images/products/gamepad.svg" alt="gamepad image" />
-    <div
-      class="absolute top-4 left-4 bg-primary-red text-secondary text-xs rounded py-0.5 px-2"
-    >
-      -40%
+<app-card class="group">
+  <div class="relative max-w-max font-poppins font-400">
+    <img class="p-8" [src]="imageSrc" alt="gamepad image" />
+
+    @if (new()) {
+      <div
+        class="absolute top-4 left-4 bg-primary-green text-secondary text-xs rounded py-0.5 px-2"
+      >
+        New
+      </div>
+    } @else if (discount()) {
+      <div
+        class="absolute top-4 left-4 bg-primary-red text-secondary text-xs rounded py-0.5 px-2"
+      >
+        {{ showDiscount }}
+      </div>
+    }
+    <div class="absolute top-4 right-4">
+      <app-roundedfull>
+        <img src="assets/icons/heart2.svg" alt="heart2 icon" />
+      </app-roundedfull>
+      <app-roundedfull class="pt-2">
+        <img src="assets/icons/eye.svg" alt="eye icon" />
+      </app-roundedfull>
     </div>
   </div>
+  <button
+    class="font-poppins font-500 text-center w-full py-2 bg-transparent text-transparent group-hover:bg-primary group-hover:text-secondary"
+  >
+    Add to Cart
+  </button>
 </app-card>

@@ -1,0 +1,24 @@
+<div class="flex items-center">
+  <ng-container *ngFor="let star of stars; let i = index">
+    <svg
+      *ngIf="i < rating"
+      class="w-4 h-4 text-yellow-500 fill-current"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+    >
+      <path
+        d="M10 15l-5.878 3.09 1.125-6.545-4.752-4.63 6.564-.955L10 0l2.941 5.96 6.564.955-4.752 4.63 1.125 6.545z"
+      />
+    </svg>
+    <svg
+      *ngIf="i >= rating"
+      class="w-4 h-4 text-gray-300 fill-current"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+    >
+      <path
+        d="M10 15l-5.878 3.09 1.125-6.545-4.752-4.63 6.564-.955L10 0l2.941 5.96 6.564.955-4.752 4.63 1.125 6.545z"
+      />
+    </svg>
+  </ng-container>
+</div>

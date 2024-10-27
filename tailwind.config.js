@@ -7,6 +7,7 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
+
       fontWeight: {
         100: "100",
         200: "200",
