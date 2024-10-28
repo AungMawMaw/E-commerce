@@ -1,0 +1,41 @@
+<section class="font-inter flex flex-col gap-8 my-8 h-full">
+  <h1 class="text-4xl">Create an account</h1>
+
+  <p>Enter your details below</p>
+
+  <form [formGroup]="authForm" class="capitalize flex flex-col gap-4">
+    <app-form-input [control]="name" placeholder="Name"></app-form-input>
+
+    <app-form-input
+      class="w-full border-red-300"
+      [control]="email"
+      placeholder="Email or Phone Number"
+    ></app-form-input>
+    <app-form-input
+      [control]="password"
+      placeholder="password"
+    ></app-form-input>
+
+    <button
+      class="disabled:cursor-not-allowed w-full bg-primary-red text-secondary py-3"
+      type="submit"
+      [disabled]="authForm.invalid"
+    >
+      Submit
+    </button>
+  </form>
+
+  <button class="py-3" type="button" class="border py-3">
+    <img
+      class="inline-block"
+      src="assets/icons/google.svg"
+      alt=" google icon"
+    />
+    <span> Sign up with Google </span>
+  </button>
+
+  <p class="w-full text-center">
+    Already have account?
+    <a routerLink="/auth" class="pl-4">Login</a>
+  </p>
+</section>

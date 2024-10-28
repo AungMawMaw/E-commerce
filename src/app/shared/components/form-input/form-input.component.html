@@ -1,0 +1,19 @@
+<div class="font-poppins text-primary w-full">
+  <input
+    [id]="label"
+    [type]="type"
+    [formControl]="control"
+    [placeholder]="placeholder"
+    class="w-full border-b py-3"
+    [value]="initialValue"
+  />
+
+  <!-- Display validation errors if any -->
+  <div *ngIf="control.invalid && control.touched" class="text-red-500 p-2">
+    <small *ngIf="control.errors?.['required']">{{ label }} is required</small>
+    <small *ngIf="control.errors?.['minlength']"
+      >Minimum length is not met</small
+    >
+    <small *ngIf="control.errors?.['maxlength']">Maximum length exceeded</small>
+  </div>
+</div>

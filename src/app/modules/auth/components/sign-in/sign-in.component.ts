@@ -1,0 +1,48 @@
+import { Component } from '@angular/core';
+import {
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
+import { User } from '../../models/user.model';
+import { Router } from '@angular/router';
+import { FormInputComponent } from '../../../../shared/components/form-input/form-input.component';
+
+@Component({
+  selector: 'app-sign-in',
+  standalone: true,
+  imports: [ReactiveFormsModule, FormInputComponent],
+  templateUrl: './sign-in.component.html',
+  styleUrl: './sign-in.component.css',
+})
+export class SignInComponent {
+  constructor(private router: Router) {}
+
+  authForm = new FormGroup({
+    name: new FormControl('', {
+      validators: [Validators.required, Validators.minLength(3)],
+    }),
+    email: new FormControl('', {
+      validators: [Validators.required, Validators.email],
+    }),
+    password: new FormControl('', {
+      validators: [Validators.required, Validators.minLength(6)],
+    }),
+  });
+
+  name = this.authForm.get('name') as FormControl;
+  email = this.authForm.get('email') as FormControl;
+  password = this.authForm.get('password') as FormControl;
+
+  onSubmit() {
+    if (this.authForm.valid) {
+      const data: User = {
+        name: this.name.value,
+        email: this.email.value,
+        password: this.password.value,
+      };
+      this.authForm.reset();
+    }
+  }
+}

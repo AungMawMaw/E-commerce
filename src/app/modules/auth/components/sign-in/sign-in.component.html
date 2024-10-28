@@ -1,0 +1,29 @@
+<section class="font-inter flex flex-col gap-8 my-8 h-full justify-center">
+  <h1 class="text-4xl">Log in to Exclusive</h1>
+
+  <p>Enter your details below</p>
+
+  <form [formGroup]="authForm" class="capitalize flex flex-col gap-4">
+    <app-form-input
+      class="w-full border-red-300"
+      [control]="email"
+      placeholder="Email or Phone Number"
+    ></app-form-input>
+    <app-form-input
+      [control]="password"
+      placeholder="password"
+    ></app-form-input>
+
+    <div class="flex gap-4 justify-between items-center">
+      <button
+        class="disabled:cursor-not-allowed bg-primary-red text-secondary py-3 px-8"
+        type="submit"
+        [disabled]="authForm.invalid"
+      >
+        Login
+      </button>
+
+      <a routerLink="/auth" class="text-primary-red">Forget Password</a>
+    </div>
+  </form>
+</section>
