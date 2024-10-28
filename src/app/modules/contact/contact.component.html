@@ -1,1 +1,68 @@
-<p>contact works!</p>
+<app-container>
+  <div class="flex flex-col justify-center gap-4 py-8">
+    <div class="flex flex-col sm:flex-row gap-4">
+      <div class="flex flex-col gap-4">
+        <section class="flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <img src="assets/icons/phone-round.svg" alt=" phone rounded icon" />
+            <span>Call to us</span>
+          </div>
+          <p class="text-sm">We are available 24/7, 7 days a week.</p>
+          <p class="text-sm">Phone: +8801611112222</p>
+        </section>
+        <hr />
+
+        <section class="flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <img src="assets/icons/mail-round.svg" alt=" mail rounded icon" />
+            <span>Write To US</span>
+          </div>
+          <p class="text-sm">
+            Fill out our form and we will contact you within 24 hours.
+          </p>
+          <p class="text-sm">Emails: customer&#64;exclusive.com</p>
+          <p class="text-sm">Emails: support&#64;exclusive.com</p>
+        </section>
+      </div>
+      <form [formGroup]="contactForm" class="capitalize flex flex-col gap-4">
+        <div class="flex gap-4">
+          <app-form-input
+            [control]="name"
+            border=""
+            bg="bg-primary-gray"
+            placeholder="Your Name"
+          ></app-form-input>
+
+          <app-form-input
+            [control]="email"
+            border=""
+            bg="bg-primary-gray"
+            placeholder="Your Email"
+          ></app-form-input>
+
+          <app-form-input
+            [control]="phone"
+            border=""
+            bg="bg-primary-gray"
+            placeholder="Your Phone"
+          ></app-form-input>
+        </div>
+
+        <app-form-text-area
+          bg="bg-primary-gray"
+          [control]="message"
+          rows="3"
+          placeholder="Your Message"
+        ></app-form-text-area>
+
+        <button
+          class="disabled:cursor-not-allowed self-end bg-primary-red text-secondary p-3"
+          type="submit"
+          [disabled]="contactForm.invalid"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</app-container>

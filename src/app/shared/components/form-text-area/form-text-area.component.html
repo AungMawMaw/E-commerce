@@ -1,14 +1,15 @@
-<div class="font-poppins text-primary w-full">
-  <input
+<div class="mb-4">
+  <!-- <label [for]="label" class="">{{ label }}</label> -->
+  <textarea
     [id]="label"
-    [type]="type"
     [formControl]="control"
     [placeholder]="placeholder"
     class="w-full p-2"
-    [class]="border + ' ' + bg"
+    [class]="bg"
     [value]="initialValue"
-  />
-
+    [rows]="rows"
+  >
+  </textarea>
   <!-- Display validation errors if any -->
   <div *ngIf="control.invalid && control.touched" class="text-red-500 p-2">
     <small *ngIf="control.errors?.['required']">{{ label }} is required</small>

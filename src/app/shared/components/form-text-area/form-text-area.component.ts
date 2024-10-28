@@ -3,20 +3,21 @@ import { Component, Input, SimpleChanges } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-form-input',
+  selector: 'app-form-text-area',
   standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
-  templateUrl: './form-input.component.html',
-  styleUrl: './form-input.component.css',
+  templateUrl: './form-text-area.component.html',
+  styleUrl: './form-text-area.component.css',
 })
-export class FormInputComponent {
+export class FormTextAreaComponent {
   @Input() control!: FormControl;
   @Input() label: string = '';
-  @Input() type: string = 'text';
+  @Input() bg: string = '';
+
+  @Input() rows: string = '2';
+
   @Input() placeholder: string = '';
   @Input() initialValue: string | null = null; // Optional initial value
-  @Input() border: string = 'border-b';
-  @Input() bg: string = 'bg-transparent';
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['initialValue'] && this.initialValue !== null) {
