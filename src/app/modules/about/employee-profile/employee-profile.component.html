@@ -1,0 +1,35 @@
+<div class="flex flex-col gap-12">
+  <div class="flex gap-12 sm:flex-row flex-col">
+    @for (list of lists; track list.image) {
+      <div class="flex flex-col justify-between gap-4 w-full h-full">
+        <img [src]="list.image" [alt]="list.name" />
+        <h2 class="text-3xl">
+          {{ list.name }}
+        </h2>
+        <p>{{ list.position }}</p>
+        <div class="flex gap-4">
+          <a [href]="list.twitter">
+            <img src="assets/icons/twitter-b.svg" alt="twitter" />
+          </a>
+
+          <a [href]="list.linkin">
+            <img src="assets/icons/linkin-b.svg" alt="fb" />
+          </a>
+
+          <a [href]="list.instagram">
+            <img src="assets/icons/instagram-b.svg" alt="instgram" />
+          </a>
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="flex gap-2 justify-center w-full">
+    <img src="assets/icons/ellipse-gray.svg" alt="ellipse-none image" />
+    <img src="assets/icons/ellipse-gray.svg" alt="ellipse-none image" />
+
+    <img src="assets/icons/ellipse-red.svg" alt="ellipse-red image" />
+    <img src="assets/icons/ellipse-gray.svg" alt="ellipse-none image" />
+    <img src="assets/icons/ellipse-gray.svg" alt="ellipse-none image" />
+  </div>
+</div>
