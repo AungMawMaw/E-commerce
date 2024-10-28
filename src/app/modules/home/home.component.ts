@@ -35,14 +35,19 @@ import { RoundedfullComponent } from '../../shared/components/roundedfull/rounde
 })
 export class HomeComponent implements OnInit {
   public products$: Observable<Product[]> = EMPTY;
+  // wishlist: Product[] = [];
 
   isFetching = signal(true);
-  constructor(private productService: ProductService) {}
+  constructor(
+    private productService: ProductService,
+    // private wishlistService: WishlistService,
+  ) {}
   ngOnInit(): void {
     this.productService
       .loadProduct()
       .pipe(finalize(() => this.isFetching.set(false)))
       .subscribe();
     this.products$ = this.productService.products$;
+    // this.wishlist = this.wishlistService.getWishlist();
   }
 }

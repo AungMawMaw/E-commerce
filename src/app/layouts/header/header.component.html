@@ -23,7 +23,16 @@
       />
       <img src="assets/icons/search.svg" alt="search Icon" />
     </section>
-    <img src="assets/icons/heart.svg" alt="heart Icon" />
+    <div class="relative">
+      <a routerLink="/wishList" routerLinkActive="bg-primary-red">
+        <img src="assets/icons/heart.svg" alt="heart Icon" />
+      </a>
+      <span
+        class="absolute right-0 top-0 text-white bg-red-500 rounded-full w-5 h-5 flex items-center justify-center"
+      >
+        {{ wishlist.length }}
+      </span>
+    </div>
     <img src="assets/icons/shoppingCart.svg" alt="shoppingCart Icon" />
   </div>
 </div>

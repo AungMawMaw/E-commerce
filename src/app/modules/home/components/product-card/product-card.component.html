@@ -1,14 +1,14 @@
 <app-card class="group">
   <div class="relative font-poppins font-400">
-    <img class="p-8" [src]="imageSrc" alt="image()" />
+    <img class="p-8" [src]="imageSrc" alt="image" />
 
-    @if (new()) {
+    @if (product().new) {
       <div
         class="absolute top-4 left-4 bg-primary-green text-secondary text-xs rounded py-0.5 px-2"
       >
         New
       </div>
-    } @else if (discount()) {
+    } @else if (product().discount) {
       <div
         class="absolute top-4 left-4 bg-primary-red text-secondary text-xs rounded py-0.5 px-2"
       >
@@ -16,9 +16,17 @@
       </div>
     }
     <div class="absolute top-4 right-4">
-      <app-roundedfull>
-        <img src="assets/icons/heart2.svg" alt="heart2 icon" />
-      </app-roundedfull>
+      <button errorRes.error.error="button" (click)="onAddToWishlist()">
+        <app-roundedfull
+          [bgColor]="isInWishlist() ? 'bg-primary-red' : 'bg-secondary'"
+        >
+          <img
+            class="text-white"
+            src="assets/icons/heart2.svg"
+            alt="heart2 icon"
+          />
+        </app-roundedfull>
+      </button>
       <app-roundedfull class="pt-2">
         <img src="assets/icons/eye.svg" alt="eye icon" />
       </app-roundedfull>

@@ -1,4 +1,4 @@
-<div class="font-poppins text-primary w-full">
+<div class="font-poppins text-primary w-full relative">
   @if (label) {
     <label [for]="label" class="">{{ label }}</label>
   }
@@ -7,10 +7,19 @@
     [type]="type"
     [formControl]="control"
     [placeholder]="placeholder"
-    class="w-full p-2"
+    class="w-full p-2 placeholder-gray-500 required-asterisk"
     [class]="border + ' ' + bg"
     [value]="initialValue"
   />
+
+  @if (control.dirty) {
+    <span
+      [style.left]="placeholder.length + 'vw'"
+      class="absolute top-1 text-primary-red pointer-events-none"
+    >
+      *</span
+    >
+  }
 
   <!-- Display validation errors if any -->
   <div *ngIf="control.invalid && control.touched" class="text-red-500 p-2">

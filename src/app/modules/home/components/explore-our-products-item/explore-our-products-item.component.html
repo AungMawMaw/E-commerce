@@ -1,5 +1,6 @@
 <div class="">
-  <app-product-card [image]="product().image" [discount]="" />
+  <!-- <app-product-card [image]="product().image" [discount]="" /> -->
+  <app-product-card [product]="product()" />
   <p class="">{{ product().name }}</p>
 
   <div class="flex items-center gap-3">

@@ -13,6 +13,7 @@ import { PaymentOptionComponent } from './modules/account/components/payment-opt
 import { MyReturnComponent } from './modules/account/components/my-return/my-return.component';
 import { MyCancellationsComponent } from './modules/account/components/my-cancellations/my-cancellations.component';
 import { SignInComponent } from './modules/auth/components/sign-in/sign-in.component';
+import { WishlistComponent } from './modules/wishlist/wishlist.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -26,14 +27,11 @@ export const routes: Routes = [
     path: 'about',
     component: AboutComponent,
   },
-  // {
-  //   path: 'signUp',
-  //   component: SignUpComponent,
-  // },
 
-  { path: 'not-found', component: NotFoundComponent },
-  // { path: '**', redirectTo: 'not-found' },
-
+  {
+    path: 'wishList',
+    component: WishlistComponent,
+  },
   {
     path: 'account',
     component: AccountComponent,
@@ -56,4 +54,9 @@ export const routes: Routes = [
       { path: 'signUp', component: SignUpComponent },
     ],
   },
+
+  // { path: 'not-found', component: NotFoundComponent },
+  // { path: '**', redirectTo: 'not-found' },
+
+  { path: '**', component: NotFoundComponent },
 ];

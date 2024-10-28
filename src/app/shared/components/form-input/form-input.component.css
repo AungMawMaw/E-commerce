@@ -1,0 +1,5 @@
+.required-asterisk::after {
+  content: "*";
+  color: #f87171; /* Tailwind red-500 color */
+  margin-left: 0.25rem; /* Small spacing */
+}
