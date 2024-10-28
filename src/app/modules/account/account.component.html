@@ -1,9 +1,58 @@
-<section>
-  <header>
-    <menu>
-      <a routerLink="tasks/new">Add Task</a>
-    </menu>
-  </header>
+<app-container>
+  <div class="flex flex-col gap-8 py-8">
+    <section class="flex gap-4 justify-between">
+      <app-route-display />
+      <p>Welcome! <span class="text-primary-red">User</span></p>
+    </section>
+    <section class="flex gap-4 font-poppins w-full">
+      <nav class="flex flex-col gap-8">
+        <section class="flex flex-col gap-4">
+          <h1 class="text-500">Manage My Account</h1>
 
-  <!-- <router-outlet /> -->
-</section>
+          @for (navLink of manageLinks; track navLink.label) {
+            <a
+              [routerLink]="navLink.path"
+              routerLinkActive="text-primary-red "
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="indent-8"
+            >
+              {{ navLink.label }}
+            </a>
+          }
+        </section>
+
+        <section class="flex flex-col gap-4">
+          <h1 class="text-500">My Order</h1>
+
+          @for (navLink of orderLinks; track navLink.label) {
+            <a
+              [routerLink]="navLink.path"
+              routerLinkActive="text-primary-red "
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="indent-8"
+            >
+              {{ navLink.label }}
+            </a>
+          }
+        </section>
+
+        <section class="flex flex-col gap-4">
+          <h1 class="text-500">Manage My Account</h1>
+
+          <!-- @for (navLink of manageLinks; track navLink.label) { -->
+          <!--   <a -->
+          <!--     [routerLink]="navLink.path" -->
+          <!--     routerLinkActive="text-primary-red " -->
+          <!--     [routerLinkActiveOptions]="{ exact: true }" -->
+          <!--     class="indent-8" -->
+          <!--   > -->
+          <!--     {{ navLink.label }} -->
+          <!--   </a> -->
+          <!-- } -->
+        </section>
+      </nav>
+
+      <router-outlet class="" />
+    </section>
+  </div>
+</app-container>

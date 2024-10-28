@@ -1,4 +1,7 @@
 <div class="font-poppins text-primary w-full">
+  @if (label) {
+    <label [for]="label" class="">{{ label }}</label>
+  }
   <input
     [id]="label"
     [type]="type"

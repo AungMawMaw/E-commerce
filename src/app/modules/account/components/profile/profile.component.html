@@ -1,1 +1,81 @@
-<p>profile works!</p>
+<form [formGroup]="profileForm" class="capitalize flex flex-col gap-4">
+  <div class="flex flex-col gap-4">
+    <div class="flex gap-4">
+      <app-form-input
+        class="flex-1"
+        [control]="firstName"
+        label="First Name"
+        border=""
+        bg="bg-primary-gray"
+        placeholder="Md"
+      ></app-form-input>
+
+      <app-form-input
+        class="flex-1"
+        [control]="lastName"
+        label="Last Name"
+        border=""
+        bg="bg-primary-gray"
+        placeholder="Rimel"
+      ></app-form-input>
+    </div>
+
+    <div class="flex gap-4 w-full">
+      <app-form-input
+        class="flex-1"
+        [control]="email"
+        label="Email"
+        type="email"
+        border=""
+        bg="bg-primary-gray"
+        placeholder="rimel1111&#64;gmail.com"
+      ></app-form-input>
+
+      <app-form-input
+        class="flex-1"
+        label="Address"
+        [control]="address"
+        border=""
+        bg="bg-primary-gray"
+        placeholder="Kingston, 5236, United State"
+      ></app-form-input>
+    </div>
+
+    <app-form-input
+      type="password"
+      [control]="confirmPassword"
+      label="Confirm Password"
+      border=""
+      bg="bg-primary-gray"
+      placeholder=""
+    ></app-form-input>
+
+    <app-form-input
+      type="password"
+      [control]="newPassword"
+      label="New Password"
+      border=""
+      bg="bg-primary-gray"
+      placeholder=""
+    ></app-form-input>
+    <app-form-input
+      [control]="confirmPassword"
+      label="Confirm Password"
+      type="password"
+      border=""
+      bg="bg-primary-gray"
+      placeholder=""
+    ></app-form-input>
+  </div>
+  <div class="self-end">
+    Cancel
+
+    <button
+      class="disabled:cursor-not-allowed bg-primary-red text-secondary p-3"
+      type="submit"
+      [disabled]="profileForm.invalid"
+    >
+      Save Changes
+    </button>
+  </div>
+</form>
